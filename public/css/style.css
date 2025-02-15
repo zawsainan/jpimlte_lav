@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Acumin';
+    src: url('../fonts/Acumin-RPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Acumin";
+}
+
+p {
+    font-family: "Acumin";
+    text-align: justify;
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* styles related to navbar */
+.fixed-top {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 10vh;
+    max-height: 120px;
+    width: auto;
+}
+
+.logo-text {
+    line-height: 1.05;
+    font-size: 1rem;
+    color: #0D2348;
+}
+
+/* for nav links  */
+
+a {
+    color: #0D2348 !important;
+    text-transform: capitalize !important;
+}
+
+/* body */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #0D2348;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+/* .hero-text{
+    font-size: 6rem;
+    width: 55%;
+    left: 15%;
+    color: #0D2348;
+    transform: translateY(-50%);
+} */
+.hero-text {
+    left: 15%;
+    color: #0D2348;
+    transform: translateY(-50%);
+    font-size: 6rem;
+    width: 55%;
+}
+
+/* 
+@media(min-width: 576px){
+    .hero-text{
+        font-size: 4rem;
+
+    }
+} */
+
+.banner {
+    background-image: url('../images/home/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.banner::after {
+    background: linear-gradient(to right, #0D2348, transparent);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient();
+    z-index: -1;
+}
+
+.banner-text {
+    width: 80%;
+    text-align: left;
+}
+
+@media(min-width: 768px) {
+    .banner-text {
+        width: 60%;
+    }
+}
+
+@media(min-width: 992px) {
+    .banner-text {
+        width: 36%;
+    }
+}
+
+/*styling for Placeholder images */
+
+.placeholder-img-one::after,
+.placeholder-img-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0D2348;
+    opacity: .7;
+    z-index: -1;
+}
+
+.placeholder-img-one {
+    position: relative;
+    background: url('../images/home/team1.jpg') no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    height: 15rem;
+    z-index: 2;
+}
+
+.placeholder-img-two {
+    position: relative;
+    background: url('../images/home/team2.jpg') no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    height: 15rem;
+    z-index: 2;
+}
+
+.team-banner {
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0)),
+        url('../images/about/team-banner.png');
+    background-position: center 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* styling for footer  */
+
+footer {
+    position: relative;
+    background: url('../images/Pattern.png') no-repeat;
+    font-size: 0.9rem;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0D2348;
+    z-index: -1;
+    opacity: 0.97;
+}
