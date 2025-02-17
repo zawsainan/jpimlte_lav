@@ -86,7 +86,6 @@ body {
 } */
 .hero-text {
     left: 15%;
-    color: #0D2348;
     transform: translateY(-50%);
     font-size: 6rem;
     width: 55%;
