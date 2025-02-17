@@ -20,7 +20,7 @@
                     <li class="nav-item ms-2"><a href="" class="nav-link">Market Insights</a></li>
                     <li class="nav-item ms-2"><a href="" class="nav-link">Portfolio</a></li>
                     <li class="nav-item ms-2"><a href="" class="nav-link">Contact Us</a></li>
-                    <li class="nav-item ms-2"><a href="" class="nav-link"><i class="fa-solid fa-search"></i></a></li>
+                    <li class="nav-item ms-2"><a href="" class="nav-link"><i class="fa-solid fa-search" target="_blank"></i></a></li>
                     <li class="nav-item ms-2"><a href="https://www.linkedin.com/company/jpim-singapore/"
                         class="nav-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
