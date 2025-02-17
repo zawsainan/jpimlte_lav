@@ -1,6 +1,6 @@
 @extends("layout")
 @section("content")
-    <x-about-hero></x-about-hero>  
+    <x-hero :image="asset('images/about/hero.png')" text="About Us"></x-hero>
     <div class="container px-5 py-3 d-flex flex-column">
         <section class="fade-in mb-3">
             <h3 class="mb-4 fs-2">The Firm</h3>

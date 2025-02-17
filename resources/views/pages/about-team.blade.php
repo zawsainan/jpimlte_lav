@@ -1,7 +1,6 @@
 @extends("layout")
 @section("content")
-    <x-about-hero></x-about-hero>
-    
+        <x-hero :image="asset('images/about/hero.png')" text="About Us"></x-hero>
     <div class="container px-5 py-3">
         <h3 class="h2 fw-bold">Mr. Jonathan Poh</h3>
         <p>
