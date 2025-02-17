@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PropertyController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',function(){
@@ -22,6 +23,10 @@ Route::prefix('about')->group(function(){
 });
 
 
-Route::get('/portfolio',function(){
-    return view("pages.portfolio");
-})->name('portfolio');
+Route::controller(PropertyController::class)->group(function(){
+    Route::prefix('/portfolio')->group(function(){
+        Route::get("/",'index')->name('portfolio');
+        Route::get("/interior/{id}",'showInterior')->name('interior');
+        Route::get("/attraction/{id}",'showAttraction')->name('attraction');
+    });
+});
