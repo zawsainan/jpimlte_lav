@@ -1,0 +1,3 @@
+ <title>
+     JPIM - {{$page}}
+ </title>

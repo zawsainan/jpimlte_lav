@@ -1,5 +1,8 @@
 @extends("layout")
 @section("content")
+@php 
+    $title = "About | Team"
+@endphp
         <x-hero :image="asset('images/about/hero.png')" text="Our Team"></x-hero>
     <div class="container px-5 py-3">
         <!--About Jonathan Poh-->

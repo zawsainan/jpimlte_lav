@@ -1,5 +1,8 @@
 @extends('layout')
 @section('content')
+@php 
+    $title = "Portfolio"
+@endphp
     <x-hero :image="asset('images/portfolio/hero.png')" :white="true" text="Our Portfolio"></x-hero>
     <div class="container">
         <form action="" method="get">

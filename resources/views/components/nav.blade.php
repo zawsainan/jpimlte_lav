@@ -3,10 +3,8 @@
 
             <a href="{{route('home')}}" class="navbar-brand d-flex align-items-center">
                 <img class="d-inline-block align-top logo me-1" src="{{asset('images/logo.svg')}}" alt="">
-                <div class="logo-text d-inline-block align-top text-start fw-bold">
-                    Japan Property<br>
-                    Investment<br>
-                    Management Pte Ltd
+                <div class="logo-text d-inline-block align-top text-start fw-bold fs-5 fs-md-4 fs-lg-3">
+                    Japan Property Investment Management Pte Ltd
                 </div>
              </a>
 

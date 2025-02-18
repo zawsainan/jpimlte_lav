@@ -19,7 +19,7 @@
             <p>Our JPIM journey began with frequent trips to Japan, where we saw the immense potential in the country&#39;s
                 tourism sector. In 2023, we recognized several unique opportunities as Japan&#39;s tourism industry rebounded
                 from the COVID-19 pandemic:</p>
-            <ul>
+            <ul class="fw-bold">
                 <li>
                     A weak yen - drawing foreign investment;
                 </li>

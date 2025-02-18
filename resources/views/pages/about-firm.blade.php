@@ -1,9 +1,12 @@
 @extends("layout")
 @section("content")
+@php 
+    $title = "About | Firm"
+@endphp
 <x-hero :image="asset('images/about/hero.png')" text="About Us"></x-hero>
 <div class="container px-5 py-3 d-flex flex-column">
     <section class="fade-in mb-5">
-        <h3 class="mb-4 fs-2">The Firm</h3>
+        <h3 class="mb-4 fs-2 h3">The Firm</h3>
         <div class="row">
             <div class="col-12 col-lg-6">
                 <p>Japan Property Investment Management is a reputable real estate investment firm based in Singapore, committed to
@@ -25,7 +28,7 @@
         </div>
     </section>
     <div class="fade-in my-3">
-        <h3 class="h3 mb-4">Our Approach</h3>
+        <h3 class="h3 fs-2 mb-4">Our Approach</h3>
         <p>At Japan Property Investment Management, we emphasize a strong risk management approach by maintaining a sustainable
             capital structure that supports our investment strategies and effectively mitigates potential downside risks. Our
             deep understanding of the market, complemented by our local market expertise, extensive network and strong
